@@ -1,0 +1,32 @@
+// {
+//   "name": "Simple",
+//   "description": "Simple",
+//   "version": "1.0",
+//   // "background": {    
+//   //   "scripts": ["bg.js"] //Here you can name the JS file that you have created
+//   // },
+//   "browser_action": {
+//     "default_title": "Simple",
+//     "default_icon": "icon.png",
+//     "on_click": "bg.js"
+//     // "default_popup": "index.html"
+//   },
+//   "manifest_version": 2
+// }
+
+{
+  "name": "A browser action which changes its icon when clicked",
+  "description": "Change browser action color when its icon is clicked",
+  "version": "1.2",
+  "background": { "scripts": ["bg.js"] },
+  "browser_action": {
+      "name": "Click to change the icon's color"
+  },
+  "permissions": [
+          "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+        ],	
+  "manifest_version": 2
+}
